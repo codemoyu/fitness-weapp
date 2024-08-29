@@ -5,12 +5,27 @@
 
 interface NavigateToOptions {
   url: "/pages/index/index" |
-       "/pages/about/about";
+       "/pages/activity/detail" |
+       "/pages/activity/list" |
+       "/pages/booking/confirm" |
+       "/pages/booking/courseDetail" |
+       "/pages/booking/index" |
+       "/pages/card/courseDetail" |
+       "/pages/card/detail" |
+       "/pages/card/list" |
+       "/pages/coach/detail" |
+       "/pages/coach/list" |
+       "/pages/index/qrcode" |
+       "/pages/store/detail" |
+       "/pages/store/list" |
+       "/pages/user/login" |
+       "/pages/user/my" |
+       "/pages/user/profile";
 }
 interface RedirectToOptions extends NavigateToOptions {}
 
 interface SwitchTabOptions {
-  url: "/pages/index/index" | "/pages/about/about"
+  url: "/pages/index/index" | "/pages/booking/index" | "/pages/user/my"
 }
 
 type ReLaunchOptions = NavigateToOptions | SwitchTabOptions;

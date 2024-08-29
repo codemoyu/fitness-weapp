@@ -7,8 +7,7 @@
 import { useUserStore } from '@/store'
 import { getNeedLoginPages, needLoginPages as _needLoginPages } from '@/utils'
 
-// TODO Check
-const loginRoute = '/pages/login/index'
+const loginRoute = '/pages/user/login'
 
 const isLogined = () => {
   const userStore = useUserStore()

@@ -1,18 +1,71 @@
 // @import './iconfont.css';
-
-.test {
-  // 可以通过 @apply 多个样式封装整体样式
-  @apply mt-4 ml-4;
-
-  padding-top: 4px;
-  color: red;
-}
-
 :root,
 page {
+  // 直接修改组件库能调整的部分
   // 修改按主题色
-  // --wot-color-theme: #37c2bc;
+  --wot-color-theme: #A1EA2B;
+  --wot-color-warning: #FF7427;
+  --wot-button-primary-color: #333;
+  --wot-button-medium-radius: 0;
+  // tabs默认字号
+  --wot-tabs-nav-fs: 30rpx;
+  --wot-radio-button-height: 28px;
+  --wot-radio-button-radius: 8rpx;
 
-  // 修改按钮背景色
-  // --wot-button-primary-bg-color: green;
+  //应用自定义
+  --app-page-bg-color: #F6F6F6;
+  --app-main-color: #A1EA2B;
+  --app-main-bg-color: rgba(161, 234, 43, 0.2);
+  --app-highlight-color: #FF7427;
+  --app-font-color: #333;
+  --app-font-base: 24rpx;
+  --app-desc-color: #7D7D7D;
+}
+
+page {
+  // 修改默认字体
+  font-family: PingFang SC;
+  font-size: var(--app-font-base);
+  color: var(--app-font-color);
+}
+
+view,text {
+  box-sizing: border-box;
+}
+button {
+  margin: 0;
+}
+
+/******************************************
+* 统一适配组件样式
+ *****************************************/
+.wd-button{
+  &.is-primary{
+    font-weight: 500 !important;
+  }
+  &.is-block {
+    width: 100% !important;
+  }
+}
+.wd-tabs{
+  background: transparent !important;
+
+  .wd-tabs__nav-item{
+    flex: initial !important;
+    padding: 0 24rpx;
+  }
+  .wd-tabs__nav-item.is-active{
+    font-size: 36rpx;
+  }
+}
+
+
+/******************************************
+* 公共样式
+ *****************************************/
+.rich-text {
+  font-size: 24rpx;
+  line-height: 1.5;
+  padding: 24rpx 0;
+  word-break: break-all;
 }
