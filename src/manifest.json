@@ -83,7 +83,7 @@
   },
   "quickapp": {},
   "mp-weixin": {
-    "appid": "wxa2abb91f64032a2b",
+    "appid": "wxc36da86a17d06948",
     "setting": {
       "urlCheck": false
     },
@@ -105,7 +105,7 @@
   "vueVersion": "3",
   "h5": {
     "router": {
-      "base": "/"
+      "base": "/fitness/"
     }
   }
 }

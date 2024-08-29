@@ -4,6 +4,9 @@ import store from './store'
 import { routeInterceptor, requestInterceptor, prototypeInterceptor } from './interceptors'
 import 'virtual:uno.css'
 import '@/style/index.scss'
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn';
+dayjs.locale('zh-cn')
 
 export function createApp() {
   const app = createSSRApp(App)

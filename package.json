@@ -1,22 +1,22 @@
 {
   "name": "fitness-weapp",
   "type": "commonjs",
-  "version": "2.4.3",
-  "description": "unibest - 最好的 uniapp 开发模板",
+  "version": "1.0.0",
+  "description": "健身房会员小程序模板",
   "author": {
-    "name": "codercup",
-    "zhName": "菲鸽",
-    "email": "1020103647@qq.com",
-    "github": "https://github.com/codercup",
-    "gitee": "https://gitee.com/codercup"
+    "name": "codemoyu",
+    "zhName": "代码墨语",
+    "email": "codemoyu@gmail.com",
+    "github": "https://github.com/codemoyu",
+    "gitee": "https://gitee.com/codemoyu"
   },
   "license": "MIT",
-  "repository": "https://github.com/codercup/unibest",
-  "repository-gitee": "https://gitee.com/codercup/unibest",
+  "repository": "https://github.com/codemoyu/fitness-weapp",
+  "repository-gitee": "https://gitee.com/codemoyu/fitness-weapp",
   "bugs": {
-    "url": "https://github.com/codercup/unibest/issues"
+    "url": "https://github.com/codemoyu/fitness-weapp/issues"
   },
-  "homepage": "https://codercup.github.io/unibest/",
+  "homepage": "https://codemoyu.github.io/fitness-weapp/",
   "engines": {
     "node": ">=18",
     "pnpm": ">=7.30"

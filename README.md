@@ -1,19 +1,12 @@
-<p align="center">
-  <a href="https://github.com/codercup/unibest">
-    <img width="160" src="./src/static/logo.svg">
-  </a>
-</p>
+**特别声明：本项目中的静态mock的数据、展示图片都归BOOM GYM健身所有。**
+
 
 <h1 align="center">
-  <a href="https://github.com/codercup/unibest" target="_blank">unibest - 最好的 uniapp 开发框架</a>
+  <a href="https://github.com/codemoyu/fitness-weapp" target="_blank">健身房会员小程序模板</a>
 </h1>
 
 <div align="center">
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/codercup/unibest?style=flat&logo=github)](https://github.com/codercup/unibest)
-[![GitHub forks](https://img.shields.io/github/forks/codercup/unibest?style=flat&logo=github)](https://github.com/codercup/unibest)
-[![star](https://gitee.com/codercup/unibest/badge/star.svg?theme=dark)](https://gitee.com/codercup/unibest/stargazers)
-[![fork](https://gitee.com/codercup/unibest/badge/fork.svg?theme=dark)](https://gitee.com/codercup/unibest/members)
 ![node version](https://img.shields.io/badge/node-%3E%3D18-green)
 ![pnpm version](https://img.shields.io/badge/pnpm-%3E%3D7.30-green)
 ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/codercup/unibest)
@@ -21,52 +14,62 @@
 
 </div>
 
-`unibest` —— 最好的 `uniapp` 开发模板，由 `uniapp` + `Vue3` + `Ts` + `Vite5` + `UnoCss` + `wot-ui` + `z-paging` 构成，使用了最新的前端技术栈，无需依靠 `HBuilderX`，通过命令行方式运行 `web`、`小程序` 和 `App`（编辑器推荐 `VSCode`，可选 `webstorm`）。
+## 项目简介
 
-`unibest` 内置了 `约定式路由`、`layout布局`、`请求封装`、`请求拦截`、`登录拦截`、`UnoCSS`、`i18n多语言` 等基础功能，提供了 `代码提示`、`自动格式化`、`统一配置`、`代码片段` 等辅助功能，让你编写 `uniapp` 拥有 `best` 体验 （ `unibest 的由来`）。
+这是一套仿BOOM GYM健身小程序的项目模板，实现了会员端的大部分功能，完整的健身房系统解决方案还在开发中，敬请期待。
 
-![](https://raw.githubusercontent.com/andreasbm/readme/master/screenshots/lines/rainbow.png)
+各个端的开发进度：
+* 小程序端：从卡课到课程预约等主流程页面完成静态页
+* 服务端：开发中
+* 管理后台：开发中
+* 教练端：待整理需求
 
-<p align="center">
-  <a href="https://codercup.github.io/unibest-docs/" target="_blank">📖 文档地址</a>
-  <span style="margin:0 10px;">|</span>
-  <a href="https://codercup.github.io/hello-unibest/" target="_blank">📱 DEMO 地址</a>
-</p>
+如果你对产品功能有任何需求或者建议，欢迎提出。
 
-## ⚙️ 环境
+## 模板内容
 
-- node>=18
-- pnpm>=7.30
+- 首页
+- 场馆列表
+- 场馆信息
+- 卡课列表
+- 课程/卡详情
+- 购卡确认页
+- 教练列表
+- 教练详情
+- 活动列表
+- 活动详情
+- 预约
+- 预约课程详情
+- 课程预约下单
+- 我的
+- 个人资料
+- 快速登录
+- 入场凭证
 
-## &#x1F4C2; 快速开始
+## 页面展示
+TODO：可体验的小程序待上线发布。
 
-执行 `pnpm create unibest` 创建项目
+| 首页 | 卡课列表                                                | 购卡                                                  | 预约 | 预约课程 |
+| --- |-----------------------------------------------------|-----------------------------------------------------|----|-----|
+| ![](https://file.moyud.com/static/fitness/首页.jpeg) | ![](https://file.moyud.com/static/fitness/卡课列表.png) | ![](https://file.moyud.com/static/fitness/购卡页.png)  | ![](https://file.moyud.com/static/fitness/预约.png) | ![](https://file.moyud.com/static/fitness/预约团课.jpg) | 
+| 预约下单 | 教练列表                                                | 教练详情                                                | 活动详情 | 我的  | 
+| ![](https://file.moyud.com/static/fitness/预约下单.png)  | ![](https://file.moyud.com/static/fitness/教练列表.png) | ![](https://file.moyud.com/static/fitness/教练详情.png) | ![](https://file.moyud.com/static/fitness/活动详情.png) | ![](https://file.moyud.com/static/fitness/我的.png)  |
+| 登录 |
+| ![](https://file.moyud.com/static/fitness/登录.jpg) |
 
-执行 `pnpm i` 安装依赖
 
-执行 `pnpm dev` 运行 `H5`
 
-## 📦 运行（支持热更新）
+## 📦 快速开始
 
-- web平台： `pnpm dev:h5`, 然后打开 [http://localhost:9000/](http://localhost:9000/)。
-- weixin平台：`pnpm dev:mp-weixin` 然后打开微信开发者工具，导入本地文件夹，选择本项目的`dist/dev/mp-weixin` 文件。
-- APP平台：`pnpm dev:app`, 然后打开 `HBuilderX`，导入刚刚生成的`dist/dev/app` 文件夹，选择运行到模拟器(开发时优先使用)，或者运行的安卓/ios基座。
+本项目基于[unibest](https://github.com/codercup/unibest) 框架搭建并开发，主要用到 uniapp + Vue3 + Ts + Vite4等技术栈，
 
-## 🔗 发布
-
-- web平台： `pnpm build:h5`，打包后的文件在 `dist/build/h5`，可以放到web服务器，如nginx运行。如果最终不是放在根目录，可以在 `manifest.config.ts` 文件的 `h5.router.base` 属性进行修改。
-- weixin平台：`pnpm build:mp-weixin`, 打包后的文件在 `dist/build/mp-weixin`，然后通过微信开发者工具导入，并点击右上角的“上传”按钮进行上传。
-- APP平台：`pnpm build:app`, 然后打开 `HBuilderX`，导入刚刚生成的`dist/build/app` 文件夹，选择发行 - APP云打包。
+开发步骤：
+- `git clone https://github.com/codemoyu/fitness-weapp` 项目到本地
+- 执行 `pnpm i` 安装依赖
+- 执行 `pnpm dev:mp-weixin` 然后打开微信开发者工具，导入本地文件夹，选择本项目的`dist/dev/mp-weixin` 文件。
 
 ## 📄 License
 
 [MIT](https://opensource.org/license/mit/)
 
-Copyright (c) 2024 菲鸽
-
-## 捐赠
-
-<p align='center'>
-<img alt="special sponsor appwrite" src="./screenshots/pay-1.png" height="330" style="display:inline-block; height:330px;">
-<img alt="special sponsor appwrite" src="./screenshots/pay-2.png" height="330" style="display:inline-block; height:330px; margin-left:10px;">
-</p>
+Copyright (c) 2024 代码墨语
